@@ -14,16 +14,16 @@ public class UserFacade
         userMapper = new UserMapper(database);
     }
 
-    public User login(String email, String password) throws UserException
-    {
-        return userMapper.login(email, password);
-    }
-
-    public User createUser(String email, String password) throws UserException
-    {
-        User user = new User(email, password, "customer");
-        userMapper.createUser(user);
-        return user;
-    }
+//    public User login(String email, String password) throws UserException
+//    {
+//        return userMapper.login(email, password);
+//    }
+//
+//    public User createUser(String email, String password) throws UserException
+//    {
+//        User user = new User(email, password, "customer");
+//        userMapper.createUser(user);
+//        return user;
+//    }
 
 }
